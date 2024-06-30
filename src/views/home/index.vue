@@ -1,10 +1,10 @@
 <!--
  * @Author: chenzechao
  * @Date: 2024-06-29 16:12:31
- * @LastEditTime: 2024-06-29 20:15:56
+ * @LastEditTime: 2024-06-30 21:48:07
  * @LastEditors: chenzechao
  * @Description: 
- * @FilePath: /tius/bio/src/views/home/index.vue
+ * @FilePath: /bio/src/views/home/index.vue
 -->
 <template>
   <div class="asdfa">
@@ -15,13 +15,15 @@
   </div>
 </template>
 <script setup lang="ts" name="home">
-  import {} from '@/api/';
+  import { dfad, getNAme } from '@/api/name';
   import { reactive, ref } from 'vue';
   const state = reactive({
     name: '2323',
     key: 'asdfasdfadad'
   });
+  console.log(getNAme());
   const gg = '';
+  dfad();
   gg = 10;
   const tabName = ref<any>('');
 
